@@ -12,6 +12,6 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(router);
 
-http.listen(5000, function () {
+app.listen(5000, function () {
     console.log('listening on *:5000');
 });
