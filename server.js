@@ -12,4 +12,6 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(router);
 
-app.listen(5000, () => console.log('Servidor ejecutado en puerto 5000'));
+http.listen(5000, function () {
+    console.log('listening on *:5000');
+});
